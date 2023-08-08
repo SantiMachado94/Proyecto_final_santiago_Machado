@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Encabezado y estilos -->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'lista_entradas' %}">Inicio</a></li>
+            <li><a href="{% url 'acerca_de' %}">Acerca de Mí</a></li>
+            <!-- Otros enlaces de navegación -->
+        </ul>
+    </nav>
+    <div>
+        {% block content %}
+        <!-- Contenido específico de cada página -->
+        {% endblock %}
+    </div>
+    <!-- Pie de página y scripts -->
+</body>
+</html>
